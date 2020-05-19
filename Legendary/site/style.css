@@ -1,0 +1,32 @@
+/* MENU */
+
+body{
+    margin: 0px;
+}
+.cabeça{
+    height: 200px;
+    width: 100%;
+    
+}
+.menu ul li{
+    list-style: none;
+    float: left;
+    margin-right: 50px;
+    text-align: center;
+}
+.selecionar{
+    height: 50px;
+    width: 100%;
+    margin-left: 21%;
+}
+
+.conteiner{
+    text-align: center;
+}
+
+/* HOME */
+
+.info{
+    height: 500px;
+    width: 30%;
+}
