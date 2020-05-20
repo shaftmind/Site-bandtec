@@ -4,7 +4,7 @@ body{
 
 section{
     float: left;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 /* MENU */
 
@@ -26,30 +26,70 @@ section{
 }
 
 .conteiner{
+    height: auto;
+    width: 100%;
     text-align: center;
 }
 
 /* HOME */
 
-.info {
-    height: 500px;
+.home_1{
+    height: 345px;
+    width: 100%;
+    display: flex;
+}
+
+.home_1 .info {
+    height: 348px;
     width: 30%;
     float: left;
+    margin-left: 149px;
+    margin-right: 71px;
+    display: flex 1;
 }
 
-.gif_home{
-    height: 800px;
-    width: 25%;
+.home_1 .gif_home1{
+    height: 346px;
+    width: 539px;
+    float: right;
+    margin-right: 80px;
+    margin-left: 100px;
+    display: flex 1;
+    
+}
+.home_1 img{
+    height: 345px;
+    width: 536px;
 }
 
-.info_2{
-    height: 500px;
+.home_2{
+    height: 345px;
+    width: 100%;
+    margin-top: 35px;   
+    float:left; 
+    display: flex;
+}
+
+.home_2 .info_2{
+    height: 325px;
     width: 30%;
     float: right;
+    margin-left: 170px;
+    margin-right: 80px;
+    display: flex 1;
 }
 
-.info_2 img{
+.home_2 .gif_home2{
+    height: 345 px;
+    width: 537px;
     float: left;
+    margin-left: 83px;
+    display: flex 1;
+}
+
+.home_2 img{
+    height: 345px;
+    width: 536px;
 }
 
 /* Sobre */
