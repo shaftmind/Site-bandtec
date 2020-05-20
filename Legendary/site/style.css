@@ -1,8 +1,13 @@
-/* MENU */
-
 body{
     margin: 0px;
 }
+
+section{
+    float: left;
+    margin-bottom: 40px;
+}
+/* MENU */
+
 .cabeça{
     height: 200px;
     width: 100%;
@@ -26,7 +31,51 @@ body{
 
 /* HOME */
 
-.info{
+.info {
     height: 500px;
     width: 30%;
+    float: left;
 }
+
+.gif_home{
+    height: 800px;
+    width: 25%;
+}
+
+.info_2{
+    height: 500px;
+    width: 30%;
+    float: right;
+}
+
+.info_2 img{
+    float: left;
+}
+
+/* Sobre */
+
+
+
+/* Galeria*/
+
+.galeria{
+    height: 780px;
+    width: 100%;
+    margin-left: 4%;
+}
+
+.fotos img{
+    height: 220px;
+    width: 296px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/* Equipe */
+
+.equipe{
+    float: left;
+}
+
+/* Diversos */
