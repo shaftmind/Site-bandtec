@@ -3,15 +3,46 @@ body{
 }
 
 section{
-    float: left;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    display: flex;
 }
+
+h2{
+    font-family: 'Hind', sans-serif;
+}
+
+h3{
+    font-family: 'Abel', sans-serif;
+}
+
+p{
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+}
+
+/* Fontes
+
+titulos maiores = font-family: 'Hind', sans-serif;
+
+titulos menores = font-family: 'Abel', sans-serif;
+
+textos = font-family: 'Yanone Kaffeesatz', sans-serif;
+
+
 /* MENU */
 
 .cabeça{
     height: 200px;
     width: 100%;
+    background-color: blue;
+    color: white;
+    margin-top: -20px;
+    margin-bottom: 45px;
     
+}
+
+.menu h2{
+    padding: 40px;
 }
 .menu ul li{
     list-style: none;
@@ -94,20 +125,43 @@ section{
 
 /* Sobre */
 
+.legendary{
+    height: 500px;
+    width: 1359px;
+    display: flex;
+    background-image: url(./imagens/plano_fundo.jpg);
+}
 
+.legendary .info_3{
+    height: 206px;
+    width: 328px;
+    margin-left: 107px;
+    padding: 65px;
+    display: flex 1;
+    color: white;
+}
 
 /* Galeria*/
 
-.galeria{
-    height: 780px;
-    width: 100%;
-    margin-left: 4%;
+
+.fotos{
+    height: 681px;
+    width: 1224px;
+    margin-left: 80px;
+    display: flex;
 }
 
+.fotos .galeria_fotos{
+    height: 220px;
+    width: 296px;
+    margin-right: 10px;
+    float: left;
+    display: flex 1;
+
+}
 .fotos img{
     height: 220px;
     width: 296px;
-    float: left;
     margin-right: 10px;
     margin-bottom: 10px;
 }
