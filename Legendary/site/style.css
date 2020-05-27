@@ -5,6 +5,7 @@ body{
 section{
     margin-bottom: 30px;
     display: flex;
+    width: 100%;
 }
 
 h2{
@@ -15,9 +16,17 @@ h3{
     font-family: 'Abel', sans-serif;
 }
 
+h4{
+    font-family: 'Chelsea Market', cursive;
+}
 p{
     font-family: 'Karla', sans-serif;
     text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }
 
 /* Fontes
@@ -32,17 +41,19 @@ textos = font-family: 'Yanone Kaffeesatz', sans-serif;
 /* MENU */
 
 .cabeça{
-    height: 200px;
+    height: 300px;
     width: 100%;
     background-color: blue;
     color: white;
     margin-top: -20px;
     margin-bottom: 45px;
+    background-image: url(./imagens/mountain-bike.jpg);
     
 }
 
 .menu h2{
     padding: 40px;
+    font-size: 50px;
 }
 .menu ul li{
     list-style: none;
@@ -63,6 +74,10 @@ textos = font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 /* HOME */
+
+.home h2{
+    margin-bottom: 36px;
+}
 
 .home_1{
     height: 345px;
@@ -146,17 +161,16 @@ textos = font-family: 'Yanone Kaffeesatz', sans-serif;
 
 .fotos{
     height: 681px;
-    width: 1224px;
-    margin-left: 80px;
-    display: flex;
+    width: 1253px;
+    margin-left: 56px;
+    
 }
 
 .fotos .galeria_fotos{
     height: 220px;
     width: 296px;
     margin-right: 10px;
-    float: left;
-    display: flex 1;
+    display: inline-block;
 
 }
 .fotos img{
@@ -164,6 +178,7 @@ textos = font-family: 'Yanone Kaffeesatz', sans-serif;
     width: 296px;
     margin-right: 10px;
     margin-bottom: 10px;
+    border-radius: 30px;
 }
 
 /* Equipe */
@@ -172,4 +187,70 @@ textos = font-family: 'Yanone Kaffeesatz', sans-serif;
     float: left;
 }
 
+.equipe h2{
+    padding-left: 14px;
+}
+
+.membros{
+    height: 425px;
+    width: 900px;
+    display: flex;
+    margin-left: 233px;
+}
+
+.membros .perfil_fotos{
+    display: inline block;
+    width: 300px;
+    height: 400px;
+    display: flex 1;
+}
+
+.membros img{
+    height: 260px;
+    width: 262px;
+    border-radius: 136px;
+}
+
+.perfil_fotos h4{
+    font-size: 25px;
+    margin-bottom: 16px;
+}
+
+.membros ul li{
+    list-style: none;
+}
+
+.redes_sociais{
+    height: 35px;
+    width: 300px;
+}
+
+.redes_sociais ul li img{
+    height: 30px;
+    width: 30px;
+
+}
+
+.redes_sociais .social_1{
+    float: left;
+    margin-left: 62px;
+    
+}
+.redes_sociais .social_2{
+    float: right;
+    margin-right: 100px;
+    
+    
+}
+
 /* Diversos */
+
+.diversos{
+    float: left;
+}
+
+/* roda pé */
+
+.rodape{
+    float: left;
+}
