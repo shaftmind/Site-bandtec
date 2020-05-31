@@ -43,7 +43,6 @@ textos = font-family: 'Yanone Kaffeesatz', sans-serif;
 .cabeça{
     height: 300px;
     width: 100%;
-    background-color: blue;
     color: white;
     margin-top: -20px;
     margin-bottom: 45px;
@@ -249,8 +248,65 @@ textos = font-family: 'Yanone Kaffeesatz', sans-serif;
     float: left;
 }
 
+.conheca_tbm1{
+    height: 300px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    background-image: url(./imagens/523893.jpg);
+}
+
+.conheca_tbm1 .skt{
+        width: 355px;
+        margin-left: 115px;
+        margin-top: 30px;
+}
+
+.conheca_tbm2{
+    height: 300px;
+    width: 100%;
+    margin-bottom: 20px;
+    color:black;
+    display: flex;
+    background-image: url(./imagens/Cachoeira-da-Fumaça-em-Paranapiacaba.png);
+}
+
+.conheca_tbm2 img{
+    height: 272px;
+    width: 350px;
+    border-radius: 20px;
+    margin-left: 150px;
+    padding: 11px;
+    display: flex 1;
+}
+
+.conheca_tbm2 .trip{
+    width: 300px;
+    margin-left: 260px;
+    margin-right: 110px;
+    margin-top: 20px;
+
+}
+
+.conheca_tbm3{
+    height: 300px;
+    width: 100%;
+    color:black;
+    display: flex;
+    background-image: url(./imagens/217464.jpg);
+}
+
+
 /* roda pé */
 
 .rodape{
     float: left;
+}
+
+.footer{
+    color: white;
+    background-image: url(./imagens/mountain-bike.jpg);
+    height: 100px;
+    width: 100%;
+    
 }
