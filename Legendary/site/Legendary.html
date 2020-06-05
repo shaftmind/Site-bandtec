@@ -9,30 +9,74 @@
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One&display=swap" rel="stylesheet">
     <title>LegendaryDH</title>
 </head>
-<body style="background-color: yellow;">
+<body>
     <!-- Menu -->
-    <div class="cabeça">
+    <div class="cabeça" id="mycabeca" onscroll="barramenu()">
         <div class="conteiner">
             <div class="menu">
-                <h2>LegendaryDH Donwhill</h2>
+                <div class="caixa_titulo">
+                <img src="./imagens/LegenderyDH🤟🏻🔥 20190327_141248.jpg" alt="">
+                <h1>LegendaryDH</h1>
+            </div>
                 <div class="selecionar">
-                <ul>
-                    <li><a href="#home"><h4>Sobre</h4></a></li>
-                    <li><a href="#sobre"><h4>LegendaryDH</h4></a></li>
-                    <li><a href="#galeria"><h4>Clik's</h4></a></li>
-                    <li><a href="#equipe"><h4>Equipe!</h4></a></li>
-                    <li><a href="#diversos"><h4>Conheça Também!</h4></a></li>
-                </ul>
-               <!-- <ul>
-                    <li></li>
-                    <li></li>
-                </ul> -->
+                    <ul>
+                        <li><a href="#home"><h4>Sobre</h4></a></li>
+                        <li><a href="#sobre"><h4>LegendaryDH</h4></a></li>
+                        <li><a href="#galeria"><h4>Clik's</h4></a></li>
+                        <li><a href="#equipe"><h4>Equipe!</h4></a></li>
+                        <li><a href="#diversos"><h4>Conheça Também!</h4></a></li>
+                    </ul>
                 </div>
+                    <div class="selecionar2">
+                    <ul>
+                        <li><a href="#"><img src="./imagens/verify.png" alt="" onclick="open_modal()"></a></li>
+                    </ul>
+                </div>
+               
             </div>
         </div>
     </div>
+
+    <!-- Modal -->
+    <center>
+    <div class="all_modal" id="modal">
+        <span onclick="close_modal()">&times;</span>
+        <div class="intro_modal">
+            <img src="./imagens/LegenderyDH🤟🏻🔥 20190327_141248.jpg" alt="">
+            <h1>LegendaryDH</h1>
+            <p>
+                Cadastre-se <br> para receber as melhores informações <br> da LegendaryDH
+            </p>
+            </div>
+            <div>
+            <form action="">
+                <label for="nome" style="float: left; margin-left: 40px;">
+                    Nome: <br> <input class="input_name" type="text" name="" id="nome" required>
+                </label>
+                <label for="sobrenome">
+                    Sobrenome: <br> <input class="input_name" type="text" name="" id="sobrenome" required>
+                </label><br>
+
+                <label for="email">
+                    Email: <br> <input class="input_email" type="email" name="" id="email" required>
+                </label><br>
+
+               <label for="senha">
+                    Senha: <br> <input class="input_senha" type="password" name="" id="senha" required>
+               </label><br>
+            <input class="input_bnt" type="submit" value="Enviar">
+        </form>
+        <label for="">
+            <input type="checkbox">
+            Tenho interesse em divulgar minha arte
+        </label>
+        </div>
+    </div>
+<div>
+</center>
     <!-- Home -->
     <section id="home" class="home">
         <div class="conteiner">
@@ -142,8 +186,8 @@
                   <h4>Glauber Santos</h4>
                   <div class="redes_sociais">
                     <ul>
-                      <li><a href=""><img class="social_1" src="./imagens/face.png" alt=""></a></li>
-                      <li><a href=""><img class="social_2" src="./imagens/insta.jpg" alt=""></a></li>
+                      <li><a href="" target="blank"><img class="social_1" src="./imagens/face.png" alt=""></a></li>
+                      <li><a href="" target="blank"><img class="social_2" src="./imagens/insta.jpg" alt=""></a></li>
                     </ul>
                   </div>
               </div>
@@ -153,8 +197,8 @@
                 <h4>Ruan Vinicius</h4>
                 <div class="redes_sociais">
                   <ul>
-                    <li><a href=""><img class="social_1" src="./imagens/face.png" alt=""></a></li>
-                    <li><a href=""><img class="social_2" src="./imagens/insta.jpg" alt=""></a></li>
+                    <li><a href="" target="blank"><img class="social_1" src="./imagens/face.png" alt=""></a></li>
+                    <li><a href="" target="blank"><img class="social_2" src="./imagens/insta.jpg" alt=""></a></li>
                   </ul>
                 </div>
               </div>
@@ -164,8 +208,8 @@
                 <h4>Adaías Santos</h4>
                  <div class="redes_sociais">
                   <ul>
-                    <li><a href="https://www.facebook.com/adaias.santosalmeida"><img class="social_1" src="./imagens/face.png" alt=""></a></li>
-                    <li><a href="https://www.instagram.com/nego.kong/?hl=pt-br"><img class="social_2" src="./imagens/insta.jpg" alt=""></a></li>
+                    <li><a href="https://www.facebook.com/adaias.santosalmeida" target="blank"><img class="social_1" src="./imagens/face.png" alt=""></a></li>
+                    <li><a href="https://www.instagram.com/nego.kong/?hl=pt-br" target="blank"><img class="social_2" src="./imagens/insta.jpg" alt=""></a></li>
                   </ul>
                  </div>
               </div>
@@ -205,8 +249,11 @@
                 <div class="street">
                 <h3>Art'</h3>
                 <p>
-                    Nós também apoaimos a arte de rua, a musica underground e seus cantores... Confira abaixo dois deles:
+                    Nós também apoaimos a arte de rua, a musica underground e seus artistas em ascensão... Queremos montar uma plataforma para divulgação, caso você seja um desses artistas, cadastre-se clicando <a href="#" style="color: #f0ff04;" onclick="open_model()">aqui</a> :)
                 </p>
+                </div>
+                <div class="street_video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kl8aUIx6mIE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
 
@@ -217,9 +264,20 @@
     <section class="rodape" class="rodape">
         <div class="conteiner">
             <div class="footer">
-                   Agradecemos sua presença!@ 2020 - Almanaque
+                <p>
+                   2020 LegendaryDH!@
+                </p>
             </div>
         </div>
     </section>
 </body>
 </html>
+<script>
+    function open_modal(){
+    document.getElementById('modal').style.display = 'block';
+}
+
+function close_modal(){
+    document.getElementById('modal').style.display = 'none';
+}
+</script>
