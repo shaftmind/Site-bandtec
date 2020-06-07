@@ -1,18 +1,27 @@
 
+var modal_cad = document.getElementById('modal_cadastro');
+
 function open_modal(){
-    document.getElementById('modal').style.display = 'block';
-    document.getElementById('modal').style.position = 'fixed';
+    modal_cad.classList.add('modal-ativo');
 }
 
-function close_model(){
-    document.getElementById('modal').style.display = 'none';
-}
+function close_modal(){
+        modal_cad.classList.remove('modal-ativo');
+   }
+
+// Teste 1 modal - 
+//function open_modal(){
+    // document.getElementById('modal').style.display = 'block';
+    // document.getElementById('modal').style.position = 'fixed';
+// }
+
+// function close_model(){
+    // document.getElementById('modal').style.display = 'none';
+// }
 
 
-//function barramenu(){
-    //document.getElementById('mycabeca').style.height = "123"
-//}
-
-//function menu_l(){
-  //document.getElementsByTagName("a").style.border-bottom // "orange 5px solid"
-//}
+// function barramenu(){
+    // document.getElementById('mycabeca').style.height = "123px"
+    // document.getElementById('mycabeca').style.transition = "3s"
+    // document.getElementById('mycabeca').style.position = "fixed"
+// }

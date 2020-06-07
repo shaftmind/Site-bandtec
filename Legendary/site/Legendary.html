@@ -12,9 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One&display=swap" rel="stylesheet">
     <title>LegendaryDH</title>
 </head>
-<body>
+<body onscroll="barramenu()">
     <!-- Menu -->
-    <div class="cabeça" id="mycabeca" onscroll="barramenu()">
+    <div class="cabeça" id="mycabeca">
         <div class="conteiner">
             <div class="menu">
                 <div class="caixa_titulo">
@@ -41,6 +41,8 @@
     </div>
 
     <!-- Modal -->
+
+<div id="modal_cadastro" class="modal_ativo">
     <center>
     <div class="all_modal" id="modal">
         <span onclick="close_modal()">&times;</span>
@@ -75,8 +77,9 @@
         </label>
         </div>
     </div>
-<div>
 </center>
+</div>
+
     <!-- Home -->
     <section id="home" class="home">
         <div class="conteiner">
@@ -272,12 +275,13 @@
     </section>
 </body>
 </html>
+<script	type="text/javascript" src="funtio.js"></script>
 <script>
-    function open_modal(){
-    document.getElementById('modal').style.display = 'block';
-}
 
-function close_modal(){
-    document.getElementById('modal').style.display = 'none';
-}
+//function barramenu(){
+
+    // document.getElementById('mycabeca').style.height = "123px"
+    // document.getElementById('mycabeca').style.transition = "2s"
+    // document.getElementById('mycabeca').style.position = "fixed"
+// }
 </script>

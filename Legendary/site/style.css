@@ -8,7 +8,7 @@ body{
 }
 
 section{
-    margin-bottom: 30px;
+    margin-bottom: 3%;
     display: flex;
     width: 100%;
 }
@@ -66,8 +66,7 @@ textos = font-family: 'Yanone Kaffeesatz', sans-serif;
     background-image: url(./imagens/mountain-bike.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;  
-    filter: opacity(0.80);
+    display: flex;
     border-bottom: orange solid 5px;
     
 }
@@ -93,47 +92,73 @@ textos = font-family: 'Yanone Kaffeesatz', sans-serif;
     margin-top: 17px;
     margin-left: 26px;
 }
+
+.menu{
+   display: flex;
+}
+
+.menu .selecionar li:hover{
+    border-bottom: orange solid 5px;
+    transition: 0.1s;
+}
 .menu ul li{
     list-style: none;
     float: left;
     margin-right: 30px;
     text-align: center;
+    height: 45px;
+    font-weight: 900;
 }
 .selecionar{
-    height: 50px;
-    width: 45%;
-    margin-left: 46%;
-    margin-top: -143px;
+    height: 75px;
+    width: 53%;
+    display: flex 1;
+    margin-right: -13%;
 }
+
 .selecionar2{ 
     height: 60px;
     float: right;
-    width: 230px;
-    margin-top: -65px;
+    width: 75px;
+    margin-top: 20px;
+    margin-right: 0px;
 }
 
 .selecionar2 img{
     height: 40px;
     width: 40px;
-    padding-left: 92px;
+    padding-left: 48px;
 }
 
 /* Modal */
 
+div#modal_cadastro{   
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(44, 44, 44, 0.712);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.2s linear;
+    z-index: 20
+} 
 
 .all_modal{
-    height: 615px;
-    width: 400px;
+   height: 100%;
+   width: 400px;
    margin-top: 20px;
    background-image: url(./imagens/modal-bike.gif);
    background-repeat: no-repeat;
    background-size: cover;
    border-radius: 5px;
-   display: none;
-   position:absolute ;
-   margin-left: 505px;
-   margin-top: -200px;
+   position: relative;
 }
+
+.modal-ativo {
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
 
 .all_modal span{
     float: right;
@@ -313,6 +338,7 @@ label{
     margin-right: 10px;
     margin-bottom: 10px;
     border-radius: 30px;
+    border: #dcb13194 solid 2px;
 }
 
 .fotos img:hover{
@@ -341,8 +367,6 @@ label{
 
 .membros .perfil_fotos{
     display: inline block;
-    width: 300px;
-    height: 400px;
     display: flex 1;
 }
 
