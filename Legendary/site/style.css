@@ -160,6 +160,41 @@ div#modal_cadastro{
     opacity: 1 !important;
   }
 
+  /* Cadastro */
+
+  .cadastro_ativo{
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .cadastro_validado{
+    height: 175px;
+    width: 275px;
+    font-size: 60px;
+    background-color: yellow;
+    filter: opacity(0.9);
+    color: white;
+    border-radius: 55px;
+    border: white solid 5px;
+    margin-top: 120px;
+    margin-bottom: 180px;
+}
+
+.cadastro_validado:hover{
+    filter: none;
+}
+
+.cadastro_validado p{
+    font-family: 'Chau Philomene One', sans-serif;
+}
+
+.cadastro_val_abrigo b{
+    color: white;
+}
+
+/* FIM Cadastro */
+
+
 .all_modal span{
     float: right;
     font-size: 40px;
