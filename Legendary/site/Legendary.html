@@ -54,22 +54,27 @@
             </p>
             </div>
             <div>
-            <form action="">
+            <form id="formulario" action="" onsubmit="enviar_cadastro()">
                 <label for="nome" style="float: left; margin-left: 40px;">
-                    Nome: <br> <input class="input_name" type="text" name="" id="nome" required>
+                    Nome: <br> <input class="input_name" type="text" name="" id="nome">
                 </label>
+               
                 <label for="sobrenome">
-                    Sobrenome: <br> <input class="input_name" type="text" name="" id="sobrenome" required>
-                </label><br>
+                    Sobrenome: <br> <input class="input_name" type="text" name="" id="sobrenome">
+                </label>
+                <div id="nome_alerta" class="aviso_1"></div>
+                <div id="sobrenome_alerta" class="aviso_2"></div>         
 
                 <label for="email">
-                    Email: <br> <input class="input_email" type="email" name="" id="email" required>
-                </label><br>
+                    Email: <br> <input class="input_email" type="email" name="" id="email">
+                </label>
+                <div id="email_alerta" class="aviso_3"></div>
 
                <label for="senha">
-                    Senha: <br> <input class="input_senha" type="password" name="" id="senha" required>
-               </label><br>
-            <input class="input_bnt" type="submit" value="Enviar" onclick="cad_validado()">
+                    Senha: <br> <input class="input_senha" type="password" name="" id="senha">
+               </label>
+               <div id="senha_alerta" class="aviso_4"></div> 
+            <input class="input_bnt" type="submit" value="Enviar">
         </form>
         <label for="">
             <input type="checkbox">
@@ -79,25 +84,26 @@
     </div>
 </center>
 </div>
-<!-- <div id="modal_cadastro" class="cadastro_ativo"> -->
-    <!-- <center> -->
-    <!-- <div class="all_modal" id="modal"> -->
-        <!-- <span onclick="close_modal()">&times;</span> -->
-        <!-- <div class="intro_modal"> -->
-            <!-- <img src="./imagens/LegenderyDH🤟🏻🔥 20190327_141248.jpg" alt=""> -->
-            <!-- <h1>LegendaryDH</h1> -->
-            <!-- <div class="cadastro_val_abrigo"> -->
-            <!-- <div class="cadastro_validado"> -->
-               <!-- <p> Parabéns! <br> Cadastrado com Sucesso!</p> -->
-            <!-- </div> -->
-            <!-- <b> -->
-            <!-- @2020 - LegendaryDH -->
-            <!-- </b> -->
-            <!-- </div> -->
-        <!-- </div> -->
-    <!-- </div> -->
-<!-- </center> -->
-<!-- </div> -->
+
+<!-- <div id="modal_ok" class="cadastro_ativo"> 
+    <center>
+    <div class="all_modal" id="modal">
+        <span onclick="close_val()">&times;</span>
+        <div class="intro_modal">
+            <img src="./imagens/LegenderyDH🤟🏻🔥 20190327_141248.jpg" alt="">
+            <h1>LegendaryDH</h1>
+            <div class="cadastro_val_abrigo">
+            <div class="cadastro_validado">
+               <i> Parabéns! <br> Cadastrado com <br> Sucesso!</i>
+            </div>
+            <b>
+            @2020 - LegendaryDH
+            </b>
+            </div>
+        </div>
+    </div>
+</center>
+</div> -->
 
     <!-- Home -->
     <section id="home" class="home">
@@ -294,13 +300,6 @@
     </section>
 </body>
 </html>
-<script	type="text/javascript" src="funtio.js"></script>
-<script>
-    
-//function barramenu(){
-
-    // document.getElementById('mycabeca').style.height = "123px"
-    // document.getElementById('mycabeca').style.transition = "2s"
-    // document.getElementById('mycabeca').style.position = "fixed"
-//  }
-</script>
+<script	type="text/javascript" src="modal.js"></script>
+<script src="menu.js"></script>
+<script src="cadastro.js"></script>

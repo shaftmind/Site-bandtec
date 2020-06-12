@@ -1,5 +1,6 @@
 
 var modal_cad = document.getElementById('modal_cadastro');
+var modal_certo = document.getElementById('modal_ok')
 
 function open_modal(){
     modal_cad.classList.add('modal-ativo');
@@ -9,9 +10,15 @@ function close_modal(){
         modal_cad.classList.remove('modal-ativo');
    }
 
-function cad_validado(){
-    modal_cad.classList.add('cadastro_ativo');
+function open_val(){
+     modal_certo.classList.add('cadastro_ativo')
 }
+
+function close_val(){
+    modal_certo.classList.remove('cadastro_ativo')
+}
+
+
 
 // Teste 1 modal - 
 //function open_modal(){
@@ -24,8 +31,3 @@ function cad_validado(){
 // }
 
 
-// function barramenu(){
-    // document.getElementById('mycabeca').style.height = "123px"
-    // document.getElementById('mycabeca').style.transition = "3s"
-    // document.getElementById('mycabeca').style.position = "fixed"
-// }
