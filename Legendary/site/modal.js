@@ -11,11 +11,12 @@ function close_modal(){
    }
 
 function open_val(){
-     modal_certo.classList.add('cadastro_ativo')
+     modal_certo.classList.add('cadastro_ativo');
 }
 
 function close_val(){
-    modal_certo.classList.remove('cadastro_ativo')
+    modal_certo.classList.remove('cadastro_ativo');
+    modal_cad.classList.remove('modal-ativo')
 }
 
 

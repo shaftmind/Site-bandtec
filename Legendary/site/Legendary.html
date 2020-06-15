@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One&display=swap" rel="stylesheet">
     <title>LegendaryDH</title>
 </head>
-<body onscroll="barramenu()">
+<body id="pagina" onscroll="barramenu()">
     <!-- Menu -->
     <div class="cabeça" id="mycabeca">
         <div class="conteiner">
@@ -54,7 +54,7 @@
             </p>
             </div>
             <div>
-            <form id="formulario" action="" onsubmit="enviar_cadastro()">
+            <form id="formulario" onsubmit="enviar_cadastro()">
                 <label for="nome" style="float: left; margin-left: 40px;">
                     Nome: <br> <input class="input_name" type="text" name="" id="nome">
                 </label>
@@ -68,7 +68,7 @@
                 <label for="email">
                     Email: <br> <input class="input_email" type="email" name="" id="email">
                 </label>
-                <div id="email_alerta" class="aviso_3"></div>
+                <div id="email_alerta" class="aviso_3"> </div>
 
                <label for="senha">
                     Senha: <br> <input class="input_senha" type="password" name="" id="senha">
@@ -85,7 +85,7 @@
 </center>
 </div>
 
-<!-- <div id="modal_ok" class="cadastro_ativo"> 
+<div id="modal_ok" class="cadastro_ativo"> 
     <center>
     <div class="all_modal" id="modal">
         <span onclick="close_val()">&times;</span>
@@ -103,7 +103,7 @@
         </div>
     </div>
 </center>
-</div> -->
+</div>
 
     <!-- Home -->
     <section id="home" class="home">

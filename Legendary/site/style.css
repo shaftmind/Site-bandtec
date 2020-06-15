@@ -206,47 +206,56 @@ div#modal_ok{
     color: white;
 }
 
-/* .aviso_1{
-    height: 30px;
+/* Avisos Formulário */
+
+.aviso_1 p{
+    height: 20px;
     width: 145px;
     color: white;
-    background-color: red;
+    background-color: #ff0000ad;
+    border: red solid 3px;
     margin-top: -15px;
+    margin-bottom: 0px;
     border-radius: 10px;
     float: left;
     margin-left: 44px;
 } 
 
-.aviso_2{
-    height: 30px;
+.aviso_2 p{
+    height: 20px;
     width: 145px;
     color: white;
-    background-color: red;
+    background-color: #ff0000ad;
+    border: red solid 3px;
     margin-top: -15px;
     border-radius: 10px;
     margin-left: 193px;
     
 }
 
-.aviso_3{
-    height: 30px;
+.aviso_3 p{
+    height: 40px;
     width: 326px;
     color: white;
-    background-color: red;  
+    background-color: #ff0000ad; 
+    border: red solid 3px; 
     border-radius: 10px;
     margin-top: -13px;
     margin-left: 13px;
+    margin-bottom: 0px;
 }
 
-.aviso_4{
+.aviso_4 p{
     height: 30px;
     width: 326px;
     color: white;
-    background-color: red;  
+    background-color: #ff0000ad; 
+    border: red solid 3px; 
     border-radius: 10px;
     margin-top: 6px;
     margin-left: 13px;
-} */
+    margin-bottom: -1px;
+}
 
 /* FIM Cadastro */
 
@@ -308,16 +317,7 @@ div#modal_ok{
     margin-left: 12px;
  }
 
- .input_bnt{
-/* 
-    border: none;
-    height: 40px;
-    width: 200px;
-    border-radius: 05px;
-    background-color: #fbf40d;
-    margin-top: 5px;
-    margin-bottom: -1px; */
-
+.input_bnt{
 border: none;
 height: 40px;
 width: 200px;

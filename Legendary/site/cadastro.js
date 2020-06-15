@@ -1,22 +1,38 @@
 
 
 function enviar_cadastro(){
+
     var erros = cad_validado();
+    nome_alerta.innerHTML = "";
+    sobrenome_alerta.innerHTML = "";
+    email_alerta.innerHTML = "";
+    senha_alerta.innerHTML = "";
 
     if(erros.length > 0){
         for(var vezes = 0; vezes < erros.length; vezes++){
             var alerta = erros[vezes];
 
             if(alerta == erros[0]){
-             nome_alerta.innerHTML = alerta;
+                var nome_1 = document.createElement("p");
+                nome_1.innerHTML = alerta;
+                nome_alerta.appendChild(nome_1);
             } else if(alerta == erros[1]){
-                sobrenome_alerta.innerHTML = alerta;
+                var sobrenome_1 = document.createElement("p");
+                sobrenome_1.innerHTML = alerta;
+                sobrenome_alerta.appendChild(sobrenome_1);
             } else if(alerta == erros[2]){
-                email_alerta.innerHTML = alerta;
+                var email_1 = document.createElement("p");
+                email_1.innerHTML = alerta;
+                email_alerta.appendChild(email_1);
             }else if (alerta == erros[3]){
-                senha_alerta.innerHTML = alerta;
+                var senha_1 = document.createElement("p");
+                senha_1.innerHTML = alerta;
+                senha_alerta.appendChild(senha_1);
             }
         }
+    } else{
+        open_val();
+
     }
 }
 
@@ -26,30 +42,20 @@ var erros = [];
 
 if(!nome.value){
     erros.push("Preencha o Campo");
-   //  aviso.classList.add('aviso_1')
 }
 
 if(!sobrenome.value){
-    erros.push("Preencha o Campo");
-   //  aviso.classList.add('aviso_2')
+    erros.push("Preencha o Campo"); 
 }
 
 if(!email.value || (email.value.search("@") == -1) || (email.value.search(".") == -1) || (email.value.search(" ") >= '') ){
-    erros.push("O farmato de email é: usuariologin@dominio.com")
-   //  aviso.classList.add('aviso_3')
+    erros.push("O farmato de email é: usuariologin@dominio.com");
 }
 
 if(senha.value <= 7){
-    erros.push("A senha deve ter no min 8 caracteres")
-   //  aviso.classList.add('aviso_4')
+    erros.push("A senha deve ter no min 8 caracteres");
 }
 
 return erros;
 
 }
-
-
-
-// function cad_validado(){
-//     modal_cad.classList.add('cadastro_ativo');
-// }
