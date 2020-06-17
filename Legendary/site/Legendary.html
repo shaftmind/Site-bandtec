@@ -53,27 +53,38 @@
                 Cadastre-se <br> para receber as melhores informações <br> da LegendaryDH
             </p>
             </div>
+            <!-- Formulário -->
             <div>
-            <form id="formulario" onsubmit="enviar_cadastro()">
+            <form id="formulario" action="http://localhost:3333/users" method="POST" onsubmit="enviar_cadastro()">
+
+                <div class="caixinha1">
                 <label for="nome" style="float: left; margin-left: 40px;">
                     Nome: <br> <input class="input_name" type="text" name="" id="nome">
                 </label>
-               
+                <div id="nome_alerta" class="aviso_1"></div>
+                </div>
+
+                <div class="caixinha2">
                 <label for="sobrenome">
                     Sobrenome: <br> <input class="input_name" type="text" name="" id="sobrenome">
                 </label>
-                <div id="nome_alerta" class="aviso_1"></div>
-                <div id="sobrenome_alerta" class="aviso_2"></div>         
-
+                <div id="sobrenome_alerta" class="aviso_2"></div>       
+                </div>  
+                 
+                <div class="caixinha3">
                 <label for="email">
                     Email: <br> <input class="input_email" type="email" name="" id="email">
                 </label>
                 <div id="email_alerta" class="aviso_3"> </div>
+                </div>
 
+               <div class="caixinha4">
                <label for="senha">
                     Senha: <br> <input class="input_senha" type="password" name="" id="senha">
                </label>
                <div id="senha_alerta" class="aviso_4"></div> 
+               </div>
+
             <input class="input_bnt" type="submit" value="Enviar">
         </form>
         <label for="">
@@ -300,6 +311,6 @@
     </section>
 </body>
 </html>
-<script	type="text/javascript" src="modal.js"></script>
-<script src="menu.js"></script>
-<script src="cadastro.js"></script>
+<script	type="text/javascript" src="./Beck/src/modal.js"></script>
+<script src="./Beck/src/menu.js"></script>
+<script src="./Beck/src/cadastro.js"></script>

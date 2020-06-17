@@ -171,7 +171,8 @@ div#modal_ok{
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 0.2s linear;
-    z-index: 20
+    z-index: 20;
+    display: none;
 } 
 
   .cadastro_ativo{
@@ -208,7 +209,13 @@ div#modal_ok{
 
 /* Avisos Formulário */
 
-.aviso_1 p{
+.caixinha1{
+    height: 107px;
+    width: 178px;
+    float: left;
+}
+
+.aviso_1{
     height: 20px;
     width: 145px;
     color: white;
@@ -218,10 +225,17 @@ div#modal_ok{
     margin-bottom: 0px;
     border-radius: 10px;
     float: left;
-    margin-left: 44px;
+    margin-left: 42px;
+    display: none;
 } 
 
-.aviso_2 p{
+.caixinha2{
+    height: 107px;
+    width: 214px;
+    float: right;
+}
+
+.aviso_2{
     height: 20px;
     width: 145px;
     color: white;
@@ -229,12 +243,20 @@ div#modal_ok{
     border: red solid 3px;
     margin-top: -15px;
     border-radius: 10px;
-    margin-left: 193px;
+    margin-left: 0px;
+    display: none;
     
 }
 
-.aviso_3 p{
-    height: 40px;
+.caixinha3{
+    height: 115px;
+    width: 351px;
+    display: inline-block;
+    margin-top: -16px;
+}
+
+.aviso_3{
+    height: 23px;
     width: 326px;
     color: white;
     background-color: #ff0000ad; 
@@ -243,10 +265,17 @@ div#modal_ok{
     margin-top: -13px;
     margin-left: 13px;
     margin-bottom: 0px;
+    display: none;
 }
 
-.aviso_4 p{
-    height: 30px;
+.caixinha4{
+    height: 115px;
+    width: 351px;
+    margin-top: -17px;
+}
+
+.aviso_4{
+    height: 23px;
     width: 326px;
     color: white;
     background-color: #ff0000ad; 
@@ -255,6 +284,7 @@ div#modal_ok{
     margin-top: 6px;
     margin-left: 13px;
     margin-bottom: -1px;
+    display: none;
 }
 
 /* FIM Cadastro */
@@ -323,7 +353,7 @@ height: 40px;
 width: 200px;
 border-radius: 05px;
 background-color: #fbf40d;
-margin-top: 20px;
+margin-top: -9px;
 margin-bottom: 20px;
 }
 
