@@ -63,7 +63,7 @@ textos = font-family: 'Yanone Kaffeesatz', sans-serif;
     width: 100%;
     margin-top: -20px;
     margin-bottom: 45px;
-    background-image: url(./imagens/WhatsApp\ Image\ 2020-06-10\ at\ 21.47.07.jpeg) ;
+    background-image: url(./imagens/montain-bike.jpeg) ;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -119,15 +119,49 @@ textos = font-family: 'Yanone Kaffeesatz', sans-serif;
 .selecionar2{ 
     height: 60px;
     float: right;
-    width: 75px;
+    width: 252px;
     margin-top: 20px;
     margin-right: 0px;
+    display: flex;
+}
+
+.selecionar2 .li_a{
+    margin-right: 0px !important;
+    margin-left: 22px !important;
 }
 
 .selecionar2 img{
     height: 40px;
     width: 40px;
-    padding-left: 48px;
+    padding-left: 31px;
+}
+
+
+/* Login */
+
+div#login_acesso{   
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(44, 44, 44, 0.712);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.2s linear;
+    z-index: 20
+} 
+
+.login-ativo {
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+.problema-ativo{
+    height: 20px;
+    background-color: #ff0000ad;
+    border-radius: 10px;
+    border: red solid 3px;
+    display: none;
 }
 
 /* Modal */
@@ -308,7 +342,7 @@ div#modal_ok{
     width: 55px;
     display: flex;
     float: left;
-    margin-left: 15px;
+    margin-left: 34px;
     margin-top: 20px;
  }
 
@@ -631,7 +665,7 @@ iframe{
     background-color: blue;
     margin-top: -20px;
     border-top: orange solid 5px;
-    margin-bottom: -31px;
+    margin-bottom: -41px;
     background-image: url(./imagens/footer1.jpg);
     text-align: center;
 }

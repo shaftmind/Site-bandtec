@@ -1,0 +1,264 @@
+html{
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0px;
+    background-image: url(./imagens/back-usuario.jpg);
+    height: 500px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section{
+    margin-bottom: 3%;
+    display: flex;
+    width: 100%;
+}
+
+.conteiner{
+    height: auto;
+    width: 100%;
+    
+}
+
+h1{
+    font-family: 'Chau Philomene One', sans-serif;
+}
+
+h2{
+    font-family: 'Hind', sans-serif;
+    text-align: center;
+}
+
+h3{
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+}
+
+h4{
+    font-family: 'Chelsea Market', cursive;
+    text-align: center;
+}
+p{
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Menu */
+
+.cabeça{
+    height: 300px;
+    width: 100%;
+    margin-top: -20px;
+    margin-bottom: 45px;
+    background-image: url(./imagens/montain-bike.jpeg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    border-bottom: orange solid 5px;
+    
+}
+
+.caixa_titulo img{
+    height: 85px;
+    width: 85px;
+    margin-left: 20px;
+    margin-top: 30px;
+    display: flex 1;
+}
+
+.caixa_titulo h1{
+    padding: 10px;
+    font-size: 60px;
+    margin-top: 17px;
+    margin-left: 26px;
+}
+
+.caixa_titulo{
+    height: 150px;
+    width: 620px;
+    color: white;
+    display: flex;
+}
+
+.menu{
+    display: flex;
+ }
+ 
+ .menu .selecionar li:hover{
+     border-bottom: orange solid 5px;
+     transition: 0.1s;
+ }
+ .menu ul li{
+     list-style: none;
+     float: left;
+     margin-right: 30px;
+     text-align: center;
+     height: 45px;
+     font-weight: 900;
+ }
+ .selecionar{
+     height: 75px;
+     width: 53%;
+     display: flex 1;
+     margin-right: -13%;
+ }
+
+
+ /* veja */
+
+ .back_gren{
+    border: 3px black solid;
+    background-color: #444847b3;
+    color: white;
+    border-radius: 57px;
+    height: 257px;
+    text-align: center;
+    width: 354px;
+
+ }
+
+ .fabio_w{
+    height: 500px;
+    width: 1359px;
+    display: flex;
+    background-image: url(./imagens/fabio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fabio_w .info_3{
+    height: 206px;
+    width: 328px;
+    margin-left: 107px;
+    padding: 65px;
+    display: flex 1;
+    color: white;
+}
+
+.danny_m{
+    height: 500px;
+    width: 1359px;
+    display: flex;
+    background-image: url(./imagens/danny.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.danny_m .info_3{
+    height: 206px;
+    width: 328px;
+    margin-left: 107px;
+    padding: 65px;
+    display: flex 1;
+    color: white;
+}
+
+.paran_t{
+    height: 500px;
+    width: 1359px;
+    display: flex;
+    background-image: url(./imagens/trilha-fumaca.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.paran_t .info_3{
+    height: 206px;
+    width: 328px;
+    margin-left: 107px;
+    padding: 65px;
+    display: flex 1;
+    color: white;
+}
+
+.high_mc{
+    height: 500px;
+    width: 1359px;
+    display: flex;
+    background-image: url(./imagens/j_back-graf.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.high_mc .info_3{
+    height: 206px;
+    width: 328px;
+    margin-left: 107px;
+    padding: 65px;
+    display: flex 1;
+    color: white;
+}
+
+.dogma_i{
+    height: 500px;
+    width: 1359px;
+    display: flex;
+    background-image: url(./imagens/dogma.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dogma_i .info_3{
+    height: 206px;
+    width: 328px;
+    margin-left: 107px;
+    padding: 65px;
+    display: flex 1;
+    color: white;
+}
+
+.street_video{
+    height: 265px;
+    width: 465px;
+    display: flex;
+    margin-left: 610px;
+    margin-top: -179px;
+    
+}
+
+.street_video img{
+    height: 307px;
+    width: 330px;
+    border: orange 5px solid;
+    border-radius: 10px;
+}
+
+iframe{
+    height: 230px;
+    width: 400px;
+    display: flex 1;
+    border: orange 5px solid;
+    border-radius: 10px;
+}
+
+
+ /* rodape */
+
+ .rodape{
+    float: left;
+}
+
+.footer{
+    color: #c5c3c3;
+    height: 70px;
+    width: 100%;
+    background-color: blue;
+    margin-top: -20px;
+    border-top: orange solid 5px;
+    margin-bottom: -41px;
+    background-image: url(./imagens/footer1.jpg);
+    text-align: center;
+}
+
+.footer ul li{
+    list-style: none;
+}

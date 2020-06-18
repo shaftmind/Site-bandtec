@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./imagens/LegenderyDH🤟🏻🔥 20190327_141248.jpg" type="imagem/x-icon">
+    <link rel="shortcut icon" href="./imagens/logo.png" type="imagem/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
         <div class="conteiner">
             <div class="menu">
                 <div class="caixa_titulo">
-                <img src="./imagens/LegenderyDH🤟🏻🔥 20190327_141248.jpg" alt="">
+                <img src="./imagens/logo.png" alt="">
                 <h1>LegendaryDH</h1>
             </div>
                 <div class="selecionar">
@@ -32,7 +32,8 @@
                 </div>
                     <div class="selecionar2">
                     <ul>
-                        <li><a href="#"><img src="./imagens/verify.png" alt="" onclick="open_modal()"></a></li>
+                        <li class="li_a"><a href="#"><img src="./imagens/verify.png" alt="" onclick="open_modal()"></a></li>
+                        <li class="li_a"><a href="#"><img src="./imagens/user.png" alt="" onclick="open_login()"></a></li>
                     </ul>
                 </div>
                
@@ -47,7 +48,7 @@
     <div class="all_modal" id="modal">
         <span onclick="close_modal()">&times;</span>
         <div class="intro_modal">
-            <img src="./imagens/LegenderyDH🤟🏻🔥 20190327_141248.jpg" alt="">
+            <img src="./imagens/logo.png" alt="">
             <h1>LegendaryDH</h1>
             <p>
                 Cadastre-se <br> para receber as melhores informações <br> da LegendaryDH
@@ -101,7 +102,7 @@
     <div class="all_modal" id="modal">
         <span onclick="close_val()">&times;</span>
         <div class="intro_modal">
-            <img src="./imagens/LegenderyDH🤟🏻🔥 20190327_141248.jpg" alt="">
+            <img src="./imagens/logo.png" alt="">
             <h1>LegendaryDH</h1>
             <div class="cadastro_val_abrigo">
             <div class="cadastro_validado">
@@ -111,6 +112,44 @@
             @2020 - LegendaryDH
             </b>
             </div>
+        </div>
+    </div>
+</center>
+</div>
+
+<!-- Login -->
+
+<div id="login_acesso" class="login_ativo">
+    <center>
+    <div class="all_modal" id="modal">
+        <span onclick="close_login()">&times;</span>
+        <div class="intro_modal">
+            <img src="./imagens/logo.png" alt="">
+            <h1>LegendaryDH</h1>
+            <p>
+                Login <br> Acesse o melhor conteúdo e experiência <br> da LegendaryDH
+            </p>
+            </div>
+
+            <!-- Login -->
+            <div>
+            <form id="login" action="http://localhost:3333/login" method="POST">
+                 
+                <div class="caixinha3">
+                    <div id="alerta-login" class="problema-ativo"></div>
+                <label for="email">
+                    Email: <br> <input class="input_email" type="email" name="" id="email_colocado">
+                </label>
+                </div>
+
+               <div class="caixinha4">
+               <label for="senha">
+                    Senha: <br> <input class="input_senha" type="password" name="" id="senha_colocado">
+               </label>
+               </div>
+
+            <button class="input_bnt">Enviar</button>
+        </form>
         </div>
     </div>
 </center>
@@ -149,6 +188,7 @@
         </div>
     </div>
     </section>
+    
     <!-- Sobre Nós -->
     <section id="sobre" class="sobre">
         <div class="conteiner">
@@ -314,3 +354,4 @@
 <script	type="text/javascript" src="./Beck/src/modal.js"></script>
 <script src="./Beck/src/menu.js"></script>
 <script src="./Beck/src/cadastro.js"></script>
+<script src="./Beck/src/login.js"></script>
