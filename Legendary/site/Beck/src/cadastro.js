@@ -62,7 +62,7 @@ return erros;
 
 function cad_banco(event) {
 
-    //pegando os dados do form
+    //pegando os dados do formulario
     let nome_inserido = nome.value;
     let sobrenome_inserido = sobrenome.value;
     let email_inserido = email.value;

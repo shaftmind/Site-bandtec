@@ -16,7 +16,7 @@ function acessar_login(event) {
     let params = "email=" + email_v + "&senha=" + senha_v;
 
 
-    //abre conexao com a nossa rota de get
+    //abre conexao com a segunda rota post
     ajax.open("POST", "http://localhost:3333/login");
     ajax.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 
